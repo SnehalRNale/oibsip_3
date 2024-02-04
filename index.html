@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="temperature-converter">
+            <h1 class="title">Temperature Converter</h1>
+
+            <div class="input-container">
+                <label for="degree">Enter Temperature:</label>
+                <input type="number" id="degree" placeholder="Enter temperature...">
+            </div>
+
+            <div class="radio-buttons">
+                <input type="radio" id="fahrenheit" name="temperature" value="fahrenheit">
+                <label for="fahrenheit">Fahrenheit</label>
+                
+                <input type="radio" id="kelvin" name="temperature" value="kelvin">
+                <label for="kelvin">Kelvin</label>
+            </div>
+
+            <button id="convert-btn">Convert</button>
+
+            <div class="result">
+                <span class="result-heading">Result (Celsius):</span>
+                <h2 class="celsius-value" id="celsius"></h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
